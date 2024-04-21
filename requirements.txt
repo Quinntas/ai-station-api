@@ -1,0 +1,14 @@
+fastapi
+pydantic
+uvicorn
+python-decouple
+peewee
+PyMySQL
+email-validator
+pre-commit
+black
+flake8
+pytz
+pyjwt
+passlib
+redis[hiredis]
