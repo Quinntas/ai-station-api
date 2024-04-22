@@ -28,7 +28,14 @@ class Env(BaseClass):
     JWT_ALGORITHM: str = get_env("JWT_ALGORITHM")
     PEPER: str = get_env("PEPPER")
     REDIS_HOST: str = get_env("REDIS_HOST")
+    OPENAI_KEY: str = get_env("OPENAI_API_KEY")
     REDIS_PORT: int = int(get_env("REDIS_PORT", required=False, default_value="6379"))
+    OPEN_WEATHER_API_KEY: str = get_env("OPEN_WEATHER_API_KEY")
+
+    CHAIN_MEMORY_KEY: str = get_env("CHAIN_MEMORY_KEY", required=False, default_value="chat_history")
+    CHAIN_AGENT_SCRATCHPAD_KEY: str = get_env("CHAIN_MEMORY_KEY", required=False, default_value="agent_scratchpad")
+    CHAIN_INPUT_KEY: str = get_env("CHAIN_MEMORY_KEY", required=False, default_value="input")
+    CHAIN_SYSTEM_INPUT: str = get_env("CHAIN_MEMORY_KEY", required=False, default_value="system_input")
 
 
 env: Env = Env()

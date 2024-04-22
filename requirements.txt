@@ -12,3 +12,12 @@ pytz
 pyjwt
 passlib
 redis[hiredis]
+langchain
+requests
+langchain-openai
+ctransformers
+langchain-core
+langchain-community
+huggingface_hub
+transformers
+langchainhub
